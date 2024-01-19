@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+}
+main a {
+  color: inherit;
+  text-decoration: none;
+}
+main a li {
+  list-style-type: none;
+}
+main a section, main a header, main a aside, main a footer, main a figure, main a article {
+  display: flex;
+}
+main a .row {
+  display: block;
+  flex-wrap: wrap;
+  width: 100%;
+}/*# sourceMappingURL=global.css.map */

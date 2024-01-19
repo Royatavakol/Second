@@ -1,0 +1,249 @@
+%bt{
+    border: 2px solid black;
+}
+%bgt{
+    background-color: rgba(12, 2, 3, 0);
+}
+body{
+    font-family: 'Salsa', cursive;
+}
+#banner{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.549), rgba(244, 94, 244, 0.299)), url(../img/pexels-photo-234220.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    >figure{
+        >img{
+            width: 100px;
+            position: absolute;
+            top: 2%;
+            left: 2%;
+        }
+    }
+    .text{
+        text-align: center;
+        color: black;
+        padding-top: 300px;
+        >h1{
+            font-size: 100px;
+        }
+        >p{
+            font-size: 25px;
+            font-family: italic;
+            font-weight: bold;
+        }
+        .bottom{
+            margin: 70px auto 0;
+            >a{
+                width: 200px;
+                display:inline-block;
+                margin: 0 10px;
+                padding: 15px 0;
+                color: white;
+                @extend %bt;
+                background-color: rgba(0, 0, 0, 0.393);
+                transition: 0.5s;
+                &:hover{
+                    width: 20%;
+                }
+            }
+        }
+    }
+
+}
+.menu{
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    right: 0;top: 0;
+    @extend %bgt;
+    z-index: 2;
+    >nav{
+        >ul{
+            >li{
+                list-style: none;
+                margin: 50px 25px;
+                >a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+
+
+            }
+        }
+    }
+}
+.icon{
+    width: 70px;
+    height: 70px;
+  color: white;
+    text-align: center;
+    position: fixed;
+    right: 55px; top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+// end*****************************************
+.feature{
+    width: 100%;
+    // @extend %bt;
+    padding: 80px 0;
+    >div{
+        text-align: center;
+        padding-bottom: 70px;
+        >p{
+            font-size: 15px;
+            margin: auto;
+            line-height: -5px;
+            color: rgba(224, 28, 93, 0.8);
+        }
+        >h2{
+            font-size: 90px;
+            color: rgba(0, 0, 0, 0.434);
+            line-height: -3px;
+            font-family: italic;
+            
+        }
+    }
+    #feature-box{
+        width: 100%;
+        margin: auto;
+        padding: 0 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        .features{
+            flex-basis: 50%;
+            font-weight: bold;
+            font-size: 35px;
+            @extend %bt;
+            line-height: -10px;
+            >h3{
+                font-size: 90px;
+                line-height: -22px;
+                color: rgba(0, 0, 0, 0.549);
+            }
+            >p{
+                color: rgba(224, 28, 93, 0.8);
+                font-size: 15px;
+                text-transform: capitalize;
+            }
+            
+              
+        }
+        .features-img{
+            flex-basis: 50%;
+            margin:auto;
+           >img{
+            width: 50%;
+           }
+        }
+    }
+
+}
+// end*******
+#service{
+    width: 100%;
+    padding: 80px;
+    // background-color: rgba(255, 192, 203, 0.73);
+    >div{
+        text-align: center;
+        font-size: 15px;
+        >h2{
+            color: rgba(0, 0, 0, 0.597);
+            font-size: 90px;
+        }
+        >p{
+            color: rgba(224, 28, 93, 0.8);
+            font-size: 15px;
+        }
+    }
+    .sevvice-box{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+        
+        >div{
+            flex-basis: 48%;
+            text-align: center;border-radius: 10px;
+            margin-bottom: 20px; color: white;
+            position: relative;
+            &:hover>.services-desc{
+                opacity: 1;
+                bottom: 40%;
+               
+            }
+            >img{
+               
+                width: 100%;
+                border-radius: 10px;
+            }
+            .over{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;border-radius: 10px;
+                cursor: pointer;
+                background: linear-gradient(rgba(0, 0, 0, 0.645), rgba(128, 0, 128, 0.574));
+                opacity: 0;
+                transition: 0.5s;
+                &:hover{
+                    opacity: 1;
+                }
+
+
+            }
+            .services-desc{
+                width: 80%;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0;
+                transition: 0.4s;
+                >p{
+                    font-size: 15px;
+                }
+                >hr{
+                    background-color: black;
+                    height: 3px;
+                    margin: 15px auto;
+                    width: 60%;
+                }
+               
+            }
+        }
+
+    }
+}
+#footer{
+    @extend %bt;
+    width: 100%;
+    background-color: rgba(128, 0, 128, 0.71);
+    >div{
+        margin: 30px;
+       
+       
+        >P{
+            font-size: 25px;
+            text-align: start;
+        }
+        >span{
+            
+        }
+        >img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+           
+        }
+        
+    }
+}
